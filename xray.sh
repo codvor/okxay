@@ -44,9 +44,9 @@ cat << EOF > /etc/config.json
       "settings": {
         "clients": [
           {
-            "method": "2022-blake3-aes-128-gcm",
-			"password": "$ID",
-			"network": "tcp,udp"
+            "method": "chacha20-ietf-poly1305",
+	    "password": "$ID",
+	    "network": "tcp,udp"
           }
         ]
       },
